@@ -122,7 +122,13 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  // TODO: add icon and color in elevatedButton, shape is circle
+                  // TODO: Make snsLoginButton Widget
                   children: [
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: null,
+                    ),
                     Text('Google'),
                     Text('Apple'),
                     Text('Kakao'),
