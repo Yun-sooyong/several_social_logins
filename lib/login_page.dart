@@ -139,6 +139,7 @@ class _LoginPageState extends State<LoginPage> {
                         name: 'assets/images/kakao_logo.png'),
                     SnsButton(
                         background: naverColor,
+                        // TODO naver image change
                         name: 'assets/images/naver_logo_200.png'),
                     SnsButton(
                         background: twitterColor,
@@ -146,17 +147,29 @@ class _LoginPageState extends State<LoginPage> {
                   ],
                 ),
               ),
-              Align(
-                alignment: Alignment.bottomCenter,
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 15),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text('아직 회원이 아니신가요?'),
-                      Text('회원가입'),
-                    ],
-                  ),
+              Padding(
+                padding: const EdgeInsets.only(top: 20),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      '아직 회원이 아니신가요?  ',
+                      style: TextStyle(
+                        fontSize: 13,
+                        color: Colors.grey.shade800.withOpacity(0.8),
+                      ),
+                    ),
+                    InkWell(
+                      onTap: () {},
+                      child: Text(
+                        '회원가입',
+                        style: TextStyle(
+                          fontSize: 13,
+                          color: Colors.grey.shade800.withOpacity(0.8),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],
