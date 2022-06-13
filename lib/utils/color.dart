@@ -12,3 +12,5 @@ Color appleColor = Color(0xff555555);
 Color kakaoColor = Color(0xffffee500);
 Color naverColor = Color(0xff03c75a);
 Color twitterColor = Color(0xff1da1f2);
+
+//

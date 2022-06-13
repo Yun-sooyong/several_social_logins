@@ -15,7 +15,7 @@ class SnsButton extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         shape: CircleBorder(),
         primary: background,
-        fixedSize: Size(50, 50),
+        fixedSize: Size(45, 45),
         elevation: 0,
       ),
       onPressed: () {},
