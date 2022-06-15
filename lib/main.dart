@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:several_social_logins/sign_in.dart';
+import 'package:several_social_logins/sign_in_screen.dart';
+import 'package:several_social_logins/sign_up_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.green.shade300),
           brightness: Brightness.light),
       home: const LoginPage(),
+      //const SignUpPage(),
     );
   }
 }

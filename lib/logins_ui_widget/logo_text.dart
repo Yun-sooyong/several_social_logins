@@ -2,15 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Logo extends StatelessWidget {
-  const Logo({super.key});
+  final String logo;
+  double? size;
+  Logo({super.key, required this.logo, this.size = 90});
 
   @override
   Widget build(BuildContext context) {
     return Text.rich(
       TextSpan(
-        text: 'LOGINS',
+        text: logo,
         style: GoogleFonts.bebasNeue(
-            fontSize: 90, letterSpacing: 6, color: Colors.grey.shade900),
+            fontSize: size, letterSpacing: 6, color: Colors.grey.shade900),
         children: [
           TextSpan(
             text: '.',
