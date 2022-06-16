@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:several_social_logins/sign_up_screen.dart';
+import 'package:several_social_logins/screens/sign_up_screen.dart';
 import 'package:several_social_logins/utils/page_route_animation.dart';
 
 class SignUpButton extends StatelessWidget {
