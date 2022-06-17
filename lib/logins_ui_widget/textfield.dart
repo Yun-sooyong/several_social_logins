@@ -7,11 +7,13 @@ class CustomTextField extends StatelessWidget {
   final String hintText;
   final Icon icon;
   bool? isPassword;
+  final TextEditingController controller;
   CustomTextField({
     super.key,
     required this.hintText,
     this.isPassword = false,
     required this.icon,
+    required this.controller,
   });
 
   @override
@@ -23,6 +25,7 @@ class CustomTextField extends StatelessWidget {
         opacity: 0.3,
         radius: 10,
         child: TextField(
+          controller: controller,
           obscureText: isPassword!,
           keyboardType: isPassword!
               ? TextInputType.emailAddress

@@ -1,15 +1,37 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:several_social_logins/logins_ui_widget/background.dart';
 import 'package:several_social_logins/logins_ui_widget/login_button.dart';
 import 'package:several_social_logins/logins_ui_widget/logo_text.dart';
 import 'package:several_social_logins/logins_ui_widget/textfield.dart';
 
-class SignUpPage extends StatelessWidget {
+class SignUpPage extends StatefulWidget {
   const SignUpPage({super.key});
 
   @override
+  State<SignUpPage> createState() => _SignUpPageState();
+}
+
+class _SignUpPageState extends State<SignUpPage> {
+  @override
   Widget build(BuildContext context) {
+    final _emailController = TextEditingController();
+    final _passwordController = TextEditingController();
+    final _checkPasswordController = TextEditingController();
+    final _nameController = TextEditingController();
+
     Size size = MediaQuery.of(context).size;
+
+    @override
+    void dispose() {
+      _emailController.dispose();
+      _passwordController.dispose();
+      _checkPasswordController.dispose();
+      _nameController.dispose();
+
+      super.dispose();
+    }
+
     return Background(
       child: Scaffold(
         resizeToAvoidBottomInset: false,
@@ -33,15 +55,24 @@ class SignUpPage extends StatelessWidget {
                   Logo(logo: 'sign-up'),
                   // * email, password, name
                   CustomTextField(
+                    controller: _nameController,
                     hintText: 'Name',
                     icon: Icon(Icons.man),
                   ),
                   CustomTextField(
+                    controller: _emailController,
                     hintText: 'Email',
                     icon: Icon(Icons.email),
                   ),
                   CustomTextField(
+                    controller: _passwordController,
                     hintText: 'Password',
+                    isPassword: true,
+                    icon: Icon(Icons.password),
+                  ),
+                  CustomTextField(
+                    controller: _checkPasswordController,
+                    hintText: 'Check Password',
                     isPassword: true,
                     icon: Icon(Icons.password),
                   ),
