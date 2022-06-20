@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
+
 import 'package:several_social_logins/logins_ui_widget/background.dart';
 import 'package:several_social_logins/logins_ui_widget/login_button.dart';
+import 'package:several_social_logins/logins_ui_widget/logo_text.dart';
 import 'package:several_social_logins/logins_ui_widget/sign_up.dart';
 import 'package:several_social_logins/logins_ui_widget/sns_login_buttons.dart';
-import 'package:several_social_logins/logins_ui_widget/logo_text.dart';
 import 'package:several_social_logins/logins_ui_widget/textfield.dart';
 import 'package:several_social_logins/utils/functions.dart';
 
 class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+  final bool isToast;
+  LoginPage({
+    Key? key,
+    this.isToast = false,
+  }) : super(key: key);
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -59,6 +64,7 @@ class _LoginPageState extends State<LoginPage> {
                   text: 'connect',
                   onPressed: () {
                     singIn(_emailController, _passwordController);
+                    sToast('존재하지 않는 계정이거나 잘못입력되었습니다.');
                   },
                 ),
                 // * sns login buttons
