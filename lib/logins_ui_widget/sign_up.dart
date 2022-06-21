@@ -25,13 +25,6 @@ class SignUpButton extends StatelessWidget {
                   PageRouteWithAnimation(SignUpPage());
               Navigator.push(
                   context, pageRouteWithAnimation.slideLeftToRight());
-
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(
-              //     builder: (context) => SignUpPage(),
-              //   ),
-              // );
             },
             child: Text(
               '회원가입',

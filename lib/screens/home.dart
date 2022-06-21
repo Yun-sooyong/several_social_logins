@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
             Text(user.email!),
             ElevatedButton(
               onPressed: () {
-                FirebaseAuth.instance.signOut();
+                signOut();
               },
               child: Text('sign out'),
             ),

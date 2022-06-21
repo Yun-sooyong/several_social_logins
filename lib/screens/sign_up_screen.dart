@@ -4,6 +4,7 @@ import 'package:several_social_logins/logins_ui_widget/background.dart';
 import 'package:several_social_logins/logins_ui_widget/login_button.dart';
 import 'package:several_social_logins/logins_ui_widget/logo_text.dart';
 import 'package:several_social_logins/logins_ui_widget/textfield.dart';
+import 'package:several_social_logins/utils/functions.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({super.key});
@@ -48,17 +49,17 @@ class _SignUpPageState extends State<SignUpPage> {
           child: SingleChildScrollView(
             child: Align(
               alignment: Alignment.center,
-              heightFactor: 1.25,
+              heightFactor: 1.7,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Logo(logo: 'sign-up'),
                   // * email, password, name
-                  CustomTextField(
-                    controller: _nameController,
-                    hintText: 'Name',
-                    icon: Icon(Icons.man),
-                  ),
+                  // CustomTextField(
+                  //   controller: _nameController,
+                  //   hintText: 'Name',
+                  //   icon: Icon(Icons.man),
+                  // ),
                   CustomTextField(
                     controller: _emailController,
                     hintText: 'Email',
@@ -70,20 +71,23 @@ class _SignUpPageState extends State<SignUpPage> {
                     isPassword: true,
                     icon: Icon(Icons.password),
                   ),
-                  CustomTextField(
-                    controller: _checkPasswordController,
-                    hintText: 'Check Password',
-                    isPassword: true,
-                    icon: Icon(Icons.password),
-                  ),
+                  // CustomTextField(
+                  //   controller: _checkPasswordController,
+                  //   hintText: 'Check Password',
+                  //   isPassword: true,
+                  //   icon: Icon(Icons.password),
+                  // ),
                   // * sign up complete button
                   LoginButton(
                     size: size,
                     text: 'complete',
                     onPressed: () {
                       // TODO: firebase 연동 후 데이터를 보내는 내용을 추가
-                      Navigator.pop(context);
-                      // TODO: toast 추가
+                      signUpEmail(
+                        _emailController.text.trim(),
+                        _passwordController.text.trim(),
+                        context,
+                      );
                     },
                   ),
                 ],

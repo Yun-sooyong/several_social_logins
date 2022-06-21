@@ -63,8 +63,10 @@ class _LoginPageState extends State<LoginPage> {
                   size: size,
                   text: 'connect',
                   onPressed: () {
-                    singIn(_emailController, _passwordController);
-                    sToast('존재하지 않는 계정이거나 잘못입력되었습니다.');
+                    signInEmail(
+                      _emailController.text.trim(),
+                      _passwordController.text.trim(),
+                    );
                   },
                 ),
                 // * sns login buttons
