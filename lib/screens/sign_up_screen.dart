@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:several_social_logins/logins_ui_widget/background.dart';
-import 'package:several_social_logins/logins_ui_widget/login_button.dart';
-import 'package:several_social_logins/logins_ui_widget/logo_text.dart';
-import 'package:several_social_logins/logins_ui_widget/textfield.dart';
-import 'package:several_social_logins/utils/functions.dart';
+import 'package:several_social_logins/screens/logins_ui_widget/background.dart';
+import 'package:several_social_logins/screens/logins_ui_widget/login_button.dart';
+import 'package:several_social_logins/screens/logins_ui_widget/logo_text.dart';
+import 'package:several_social_logins/screens/logins_ui_widget/textfield.dart';
+import 'package:several_social_logins/utils/sign_func.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({super.key});

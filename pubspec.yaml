@@ -14,8 +14,10 @@ dependencies:
   firebase_core: ^1.18.0
   flutter:
     sdk: flutter
+  flutter_dotenv: ^5.0.2
   fluttertoast: ^8.0.9
   google_fonts: ^3.0.1
+  kakao_flutter_sdk_user: ^1.1.1
   provider: ^6.0.3
 
 dev_dependencies:
@@ -28,3 +30,4 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
+    - .env

@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 class SnsButton extends StatelessWidget {
   Color background;
   String name;
+  final Function()? onPressed;
   SnsButton({
     Key? key,
     required this.background,
     required this.name,
+    required this.onPressed,
   }) : super(key: key);
 
   @override

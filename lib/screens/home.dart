@@ -1,6 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:several_social_logins/utils/functions.dart';
+import 'package:several_social_logins/social_signs/kakao_sign.dart';
+import 'package:several_social_logins/utils/kakao_logins_func.dart';
+import 'package:several_social_logins/utils/sign_func.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -13,6 +15,8 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     final user = FirebaseAuth.instance.currentUser!;
+
+    final kakaoSign = KakaoSign();
 
     return Scaffold(
       appBar: AppBar(
@@ -29,7 +33,8 @@ class _HomePageState extends State<HomePage> {
             Text(user.email!),
             ElevatedButton(
               onPressed: () {
-                signOut();
+                //signOut();
+                kakaoSign.logout();
               },
               child: Text('sign out'),
             ),

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:several_social_logins/screens/logins_ui_widget/background.dart';
+import 'package:several_social_logins/screens/logins_ui_widget/login_button.dart';
+import 'package:several_social_logins/screens/logins_ui_widget/logo_text.dart';
+import 'package:several_social_logins/screens/logins_ui_widget/sign_up.dart';
+import 'package:several_social_logins/screens/logins_ui_widget/sns_login_buttons.dart';
+import 'package:several_social_logins/screens/logins_ui_widget/textfield.dart';
 
-import 'package:several_social_logins/logins_ui_widget/background.dart';
-import 'package:several_social_logins/logins_ui_widget/login_button.dart';
-import 'package:several_social_logins/logins_ui_widget/logo_text.dart';
-import 'package:several_social_logins/logins_ui_widget/sign_up.dart';
-import 'package:several_social_logins/logins_ui_widget/sns_login_buttons.dart';
-import 'package:several_social_logins/logins_ui_widget/textfield.dart';
-import 'package:several_social_logins/utils/functions.dart';
+import 'package:several_social_logins/utils/sign_func.dart';
 
 class LoginPage extends StatefulWidget {
   final bool isToast;
