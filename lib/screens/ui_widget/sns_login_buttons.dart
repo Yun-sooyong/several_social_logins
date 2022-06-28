@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:kakao_flutter_sdk_user/kakao_flutter_sdk_user.dart';
-import 'package:several_social_logins/screens/widgets/button.dart';
+import 'package:several_social_logins/widgets/button.dart';
 import 'package:several_social_logins/social_signs/kakao_sign.dart';
 import 'package:several_social_logins/utils/color.dart';
-import 'package:several_social_logins/utils/kakao_logins_func.dart';
-import 'package:several_social_logins/utils/sign_func.dart';
 
 class LoginSns extends StatefulWidget {
   LoginSns({super.key});
@@ -66,9 +64,7 @@ class _LoginSnsState extends State<LoginSns> {
                 background: kakaoColor,
                 name: 'assets/images/kakao_logo.png',
                 onPressed: () async {
-                  //loginUseKakaoTalk();
-                  //await kakaoSign.login();
-                  await UserApi.instance.loginWithKakaoTalk();
+                  kakaoSign.login();
                   setState(() {});
                 },
               ),

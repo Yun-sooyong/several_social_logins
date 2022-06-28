@@ -13,7 +13,6 @@
 
                 <!-- Redirect URI, "kakao${YOUR_NATIVE_APP_KEY}://oauth" 형식 -->
                 <data android:scheme="${kakaoNativeKey}" android:host="oauth"/>
-                <!-- <data android:scheme="77ec69d22cabcaf51f8c11f2d1823435" android:host="oauth"/> -->
             </intent-filter>
         </activity>
 

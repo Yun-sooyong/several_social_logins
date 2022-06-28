@@ -8,6 +8,7 @@ class KakaoSign implements SocialSign {
       // 카카오톡이 설치되어 있으면 카카오톡으로 로그인
       if (await isKakaoTalkInstalled()) {
         try {
+          print('kakao install check; login kakao talk');
           await UserApi.instance.loginWithKakaoTalk();
           return true;
         } catch (error) {
@@ -15,6 +16,7 @@ class KakaoSign implements SocialSign {
         }
         // 카카오톡이 설치되어 있지 않으면 카카오 계정으로 로그인
       } else {
+        print('kakao installed false; login kakao account');
         await UserApi.instance.loginWithKakaoAccount();
         return true;
       }

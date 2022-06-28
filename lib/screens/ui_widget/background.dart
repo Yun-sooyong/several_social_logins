@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:several_social_logins/screens/widgets/glassmorphism.dart';
+import 'package:several_social_logins/widgets/glassmorphism.dart';
 import 'package:several_social_logins/utils/color.dart';
 // * 외부 탭 키보드 내림 / 그라데이션 배경색 / 불투명화
 
