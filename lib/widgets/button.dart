@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class SnsButton extends StatelessWidget {
-  Color background;
-  String name;
-  final Function()? onPressed;
+  final Color background;
+  final String name;
+  final void Function()? onPressed;
   SnsButton({
     Key? key,
     required this.background,
@@ -20,7 +20,7 @@ class SnsButton extends StatelessWidget {
         fixedSize: Size(45, 45),
         elevation: 0,
       ),
-      onPressed: () {},
+      onPressed: onPressed,
       child: Padding(
         padding: const EdgeInsets.all(5.0),
         child: Image.asset(name),

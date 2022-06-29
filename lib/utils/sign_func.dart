@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:several_social_logins/screens/home.dart';
 
 void sToast(String msg) {
   Fluttertoast.showToast(
@@ -9,6 +8,8 @@ void sToast(String msg) {
     toastLength: Toast.LENGTH_SHORT,
   );
 }
+// TODO kakao_sign.dart 처럼 수정 
+// TODO 로그인 관련 함수로 로그인 성공후 home.dart 로 이동 시키도록 함
 
 Future signIn(email, password) async {
   await FirebaseAuth.instance.signInWithEmailAndPassword(
@@ -34,7 +35,7 @@ void signInEmail(email, password) async {
 
 void signUpEmail(email, password, context) async {
   try {
-    UserCredential userCredential = await FirebaseAuth.instance
+    await FirebaseAuth.instance
         .createUserWithEmailAndPassword(email: email, password: password);
     Navigator.pop(context);
   } on FirebaseAuthException catch (e) {

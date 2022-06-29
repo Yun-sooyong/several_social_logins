@@ -12,7 +12,7 @@ class LoginSns extends StatefulWidget {
 }
 
 class _LoginSnsState extends State<LoginSns> {
-  final kakaoSign = KakaoSign();
+  //final kakaoSign = KakaoSign();
 
   @override
   Widget build(BuildContext context) {
@@ -64,19 +64,22 @@ class _LoginSnsState extends State<LoginSns> {
                 background: kakaoColor,
                 name: 'assets/images/kakao_logo.png',
                 onPressed: () async {
-                  kakaoSign.login();
-                  setState(() {});
+                  final kakaoSign = await KakaoSign().login();
+                  if (kakaoSign) {}
                 },
               ),
               SnsButton(
                 background: naverColor,
                 // TODO naver logo image change, this is so small
-                name: 'assets/images/naver_logo_200.png', onPressed: () {},
+                name: 'assets/images/naver_logo_200.png',
+                onPressed: () {},
               ),
               SnsButton(
                 background: twitterColor,
                 name: 'assets/images/twitter_logo.png',
-                onPressed: () {},
+                onPressed: () {
+                  print('fuck you kakao');
+                },
               ),
             ],
           ),
