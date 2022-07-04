@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
             Text(user.email!),
             ElevatedButton(
               onPressed: () {
-                //signOut();
+                signOut();
                 kakaoSign.logout();
               },
               child: Text('sign out'),
