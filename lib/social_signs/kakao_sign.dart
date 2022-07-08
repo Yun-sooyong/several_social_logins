@@ -1,6 +1,7 @@
 import 'package:kakao_flutter_sdk_user/kakao_flutter_sdk_user.dart';
+import 'package:several_social_logins/social_signs/social_sign.dart';
 
-class KakaoSign {
+class KakaoSign implements SocialSign {
   Future<bool> login() async {
     try {
       // 카카오톡이 설치되어 있으면 카카오톡으로 로그인

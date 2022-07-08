@@ -46,32 +46,32 @@ class _LoginPageState extends State<LoginPage> {
                 Logo(logo: 'logins'),
                 // * input login, password textField
                 // TODO: 입력 데이터 처리, textfield decoration
-                CustomTextField(
-                  controller: _emailController,
-                  hintText: 'Email',
-                  icon: Icon(Icons.email),
-                ),
-                CustomTextField(
-                  controller: _passwordController,
-                  hintText: 'Password',
-                  icon: Icon(Icons.password),
-                  isPassword: true,
-                ),
+                // CustomTextField(
+                //   controller: _emailController,
+                //   hintText: 'Email',
+                //   icon: Icon(Icons.email),
+                // ),
+                // CustomTextField(
+                //   controller: _passwordController,
+                //   hintText: 'Password',
+                //   icon: Icon(Icons.password),
+                //   isPassword: true,
+                // ),
                 // * login button
-                LoginButton(
-                  size: size,
-                  text: 'connect',
-                  onPressed: () {
-                    signInEmail(
-                      _emailController.text.trim(),
-                      _passwordController.text.trim(),
-                    );
-                  },
-                ),
+                // LoginButton(
+                //   size: size,
+                //   text: 'connect',
+                //   onPressed: () {
+                //     signInEmail(
+                //       _emailController.text.trim(),
+                //       _passwordController.text.trim(),
+                //     );
+                //   },
+                // ),
                 // * sns login buttons
                 LoginSns(),
                 // * sign up button and string
-                SignUpButton(),
+                // SignUpButton(),
               ],
             ),
           ),
