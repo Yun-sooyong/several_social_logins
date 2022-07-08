@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:several_social_logins/social_signs/kakao_sign.dart';
-import 'package:several_social_logins/utils/kakao_logins_func.dart';
 import 'package:several_social_logins/utils/sign_func.dart';
 
 class HomePage extends StatefulWidget {
