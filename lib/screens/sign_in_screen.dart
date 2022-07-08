@@ -5,7 +5,6 @@ import 'package:several_social_logins/screens/ui_widget/logo_text.dart';
 import 'package:several_social_logins/screens/ui_widget/sign_up.dart';
 import 'package:several_social_logins/screens/ui_widget/sns_login_buttons.dart';
 import 'package:several_social_logins/screens/ui_widget/textfield.dart';
-
 import 'package:several_social_logins/utils/sign_func.dart';
 
 class LoginPage extends StatefulWidget {
