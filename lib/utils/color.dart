@@ -12,5 +12,20 @@ Color appleColor = Color(0xff555555);
 Color kakaoColor = Color(0xffffee500);
 Color naverColor = Color(0xff03c75a);
 Color twitterColor = Color(0xff1da1f2);
+Color gitColor = Color(0xff000000);
+Color facebookColor = Color(0xff4267B2);
+Color emailColor = Colors.grey.shade400;
+Color signupColor = Colors.greenAccent;
 
 //
+List<Color> itemColor = [
+  googleColor,
+  appleColor,
+  kakaoColor,
+  naverColor,
+  twitterColor,
+  gitColor,
+  facebookColor,
+  emailColor,
+  signupColor
+];

@@ -126,3 +126,4 @@ app.*.symbols
 firebase_options.dart
 google-services.json
 **/images
+**/assets
