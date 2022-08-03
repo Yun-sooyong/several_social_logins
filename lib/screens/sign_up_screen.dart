@@ -3,7 +3,8 @@ import 'package:several_social_logins/screens/ui_widget/background.dart';
 import 'package:several_social_logins/screens/ui_widget/login_button.dart';
 import 'package:several_social_logins/screens/ui_widget/logo_text.dart';
 import 'package:several_social_logins/screens/ui_widget/textfield.dart';
-import 'package:several_social_logins/utils/sign_func.dart';
+
+//import 'package:several_social_logins/utils/sign_func.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({super.key});
@@ -82,11 +83,6 @@ class _SignUpPageState extends State<SignUpPage> {
                     text: 'complete',
                     onPressed: () {
                       // TODO: firebase 연동 후 데이터를 보내는 내용을 추가
-                      signUpEmail(
-                        _emailController.text.trim(),
-                        _passwordController.text.trim(),
-                        context,
-                      );
                     },
                   ),
                 ],
