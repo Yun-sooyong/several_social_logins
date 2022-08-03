@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kakao_flutter_sdk_user/kakao_flutter_sdk_user.dart';
 import 'package:several_social_logins/widgets/button.dart';
-import 'package:several_social_logins/social_signs/kakao_sign.dart';
 import 'package:several_social_logins/utils/color.dart';
 
 class LoginSns extends StatefulWidget {
@@ -61,13 +59,9 @@ class _LoginSnsState extends State<LoginSns> {
                 onPressed: () {},
               ),
               SnsButton(
-                background: kakaoColor,
-                name: 'assets/images/kakao_logo.png',
-                onPressed: () async {
-                  final kakaoSign = await KakaoSign().login();
-                  if (kakaoSign) {}
-                },
-              ),
+                  background: kakaoColor,
+                  name: 'assets/images/kakao_logo.png',
+                  onPressed: () {}),
               SnsButton(
                 background: naverColor,
                 // TODO naver logo image change, this is so small

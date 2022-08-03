@@ -1,5 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:several_social_logins/utils/sign_func.dart';
+import 'package:several_social_logins/utils/functions.dart';
 
 class EmailSign {
   Future<bool> login(email, password) async {

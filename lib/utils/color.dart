@@ -16,16 +16,3 @@ Color gitColor = Color(0xff000000);
 Color facebookColor = Color(0xff4267B2);
 Color emailColor = Colors.grey.shade400;
 Color signupColor = Colors.greenAccent;
-
-//
-List<Color> itemColor = [
-  googleColor,
-  appleColor,
-  kakaoColor,
-  naverColor,
-  twitterColor,
-  gitColor,
-  facebookColor,
-  emailColor,
-  signupColor
-];

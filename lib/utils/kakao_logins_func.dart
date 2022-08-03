@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:kakao_flutter_sdk_user/kakao_flutter_sdk_user.dart';
-import 'package:several_social_logins/utils/sign_func.dart';
+import 'package:several_social_logins/utils/functions.dart';
 
 // Kakao login
 void loginUseKakaoTalk() async {
